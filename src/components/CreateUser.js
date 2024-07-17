@@ -21,16 +21,39 @@ function CreateUser() {
     <div>
       <h1>Create User</h1>
       <form onSubmit={handleSubmit}>
-        <label>Name:  </label>
-        <input type='text' name='name' onChange={handleChange} />
-        <br />
-        <label>Email: </label>
-        <input type='email' name='email' onChange={handleChange}/>
-        <br />
-        <label>Phone: </label>
-        <input type="tel" name='phone' onChange={handleChange}/>
-        <br />
+        <table cellSpacing="10px">
+          <tr>
+            <th>
+              <label>Name:  </label>
+
+            </th>
+            <th>
+              <input type='text' name='name' onChange={handleChange} />
+
+            </th>
+          </tr>
+          <tr>
+            <th>
+
+              <label>Email: </label>
+            </th>
+            <th>
+
+              <input type='email' name='email' onChange={handleChange} />
+            </th>
+          </tr>
+          <tr>
+            <th>
+              <label>Phone: </label>
+
+            </th>
+            <th>
+              <input type="tel" name='phone' onChange={handleChange} />
+            </th>
+          </tr>
         <button>Save</button>
+        </table>
+        
       </form>
     </div>
   )
